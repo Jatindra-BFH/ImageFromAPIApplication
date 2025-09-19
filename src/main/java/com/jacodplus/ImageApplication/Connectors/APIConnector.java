@@ -1,15 +1,15 @@
-package com.jacodplus.ImageApplication.Repositories;
+package com.jacodplus.ImageApplication.Connectors;
 
 import com.jacodplus.ImageApplication.Constants;
 import com.jacodplus.ImageApplication.Exceptions.ResourceNotFoundException;
 import com.jacodplus.ImageApplication.Models.ApiResponse;
-import com.jacodplus.ImageApplication.Repositories.IRepositories.IImageRepository;
+import com.jacodplus.ImageApplication.Connectors.IRepositories.IAPIConnector;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.reactive.function.client.WebClient;
 
 @Repository
-public class ImageRepository implements IImageRepository {
+public class APIConnector implements IAPIConnector {
     @Autowired
     private WebClient webClient;
     @Override

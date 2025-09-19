@@ -1,7 +1,7 @@
-package com.jacodplus.ImageApplication.Repositories.IRepositories;
+package com.jacodplus.ImageApplication.Connectors.IRepositories;
 
 import com.jacodplus.ImageApplication.Models.ApiResponse;
 
-public interface IImageRepository {
+public interface IAPIConnector {
     public ApiResponse getResource(String basePath) throws Exception;
 }

@@ -6,7 +6,7 @@ import com.jacodplus.ImageApplication.Models.ApiResponse;
 import com.jacodplus.ImageApplication.Models.Error;
 import com.jacodplus.ImageApplication.Models.ImageRequest;
 import com.jacodplus.ImageApplication.Models.ImageResponse;
-import com.jacodplus.ImageApplication.Repositories.IRepositories.IImageRepository;
+import com.jacodplus.ImageApplication.Connectors.IRepositories.IAPIConnector;
 import com.jacodplus.ImageApplication.Services.IServices.IImageServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ImageServices implements IImageServices {
     @Autowired
-    private IImageRepository _imageRepository;
+    private IAPIConnector _imageRepository;
     @Override
     public ImageResponse fetchImage(ImageRequest imageRequest) {
         ImageResponse imageResponse = null;
