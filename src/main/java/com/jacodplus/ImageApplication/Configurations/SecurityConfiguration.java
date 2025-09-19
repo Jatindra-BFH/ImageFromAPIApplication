@@ -1,4 +1,4 @@
-package com.jacodplus.ImageApplication.SecurityConfigurations;
+package com.jacodplus.ImageApplication.Configurations;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
